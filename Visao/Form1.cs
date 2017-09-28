@@ -26,5 +26,15 @@ namespace Visao
         {
 
         }
+
+        private void group_cervejas_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grid_cervejas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
