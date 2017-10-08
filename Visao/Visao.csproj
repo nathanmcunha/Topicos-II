@@ -44,11 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Cadastrar_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Cadastrar_Usuario.Designer.cs">
+      <DependentUpon>Cadastrar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar_Cerveja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar_Cerveja.Designer.cs">
+      <DependentUpon>Cadastrar_Cerveja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -76,8 +88,14 @@
     <Compile Include="Whiskey.Designer.cs">
       <DependentUpon>Whiskey.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastrar_Usuario.resx">
+      <DependentUpon>Cadastrar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar_Cerveja.resx">
+      <DependentUpon>Cadastrar_Cerveja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

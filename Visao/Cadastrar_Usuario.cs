@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace Visao
 {
-    public partial class Pais : Form
+    public partial class Cadastrar_Usuario : Form
     {
-        public Pais()
+        public Cadastrar_Usuario()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void txtbox_nome_pais_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void ok_pais_Click(object sender, EventArgs e)
+        private void ok_usuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grid_usuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

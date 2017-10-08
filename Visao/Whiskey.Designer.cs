@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.group_whiskeys = new System.Windows.Forms.GroupBox();
             this.ok_whiskey = new System.Windows.Forms.Button();
             this.combo_tipo_whiskey = new System.Windows.Forms.ComboBox();
@@ -47,6 +48,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.group_whiskeys.SuspendLayout();
             this.group_cadas_whiskey.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_whiskeys)).BeginInit();
@@ -67,7 +69,7 @@
             this.group_whiskeys.Controls.Add(this.label10);
             this.group_whiskeys.Location = new System.Drawing.Point(29, 12);
             this.group_whiskeys.Name = "group_whiskeys";
-            this.group_whiskeys.Size = new System.Drawing.Size(693, 169);
+            this.group_whiskeys.Size = new System.Drawing.Size(917, 184);
             this.group_whiskeys.TabIndex = 11;
             this.group_whiskeys.TabStop = false;
             this.group_whiskeys.Text = "Cadastrar Whiskeys";
@@ -75,7 +77,7 @@
             // 
             // ok_whiskey
             // 
-            this.ok_whiskey.Location = new System.Drawing.Point(467, 132);
+            this.ok_whiskey.Location = new System.Drawing.Point(349, 143);
             this.ok_whiskey.Name = "ok_whiskey";
             this.ok_whiskey.Size = new System.Drawing.Size(75, 23);
             this.ok_whiskey.TabIndex = 5;
@@ -91,7 +93,7 @@
             "Lager ",
             "Pilsen ",
             "Bock "});
-            this.combo_tipo_whiskey.Location = new System.Drawing.Point(206, 100);
+            this.combo_tipo_whiskey.Location = new System.Drawing.Point(88, 111);
             this.combo_tipo_whiskey.Name = "combo_tipo_whiskey";
             this.combo_tipo_whiskey.Size = new System.Drawing.Size(336, 21);
             this.combo_tipo_whiskey.TabIndex = 12;
@@ -109,7 +111,7 @@
             "Escocia ",
             "Irlanda ",
             " "});
-            this.combo_pais_whiskey.Location = new System.Drawing.Point(206, 73);
+            this.combo_pais_whiskey.Location = new System.Drawing.Point(88, 84);
             this.combo_pais_whiskey.Name = "combo_pais_whiskey";
             this.combo_pais_whiskey.Size = new System.Drawing.Size(336, 21);
             this.combo_pais_whiskey.TabIndex = 11;
@@ -117,21 +119,21 @@
             // 
             // text_qtd_whiskey
             // 
-            this.text_qtd_whiskey.Location = new System.Drawing.Point(206, 129);
+            this.text_qtd_whiskey.Location = new System.Drawing.Point(88, 140);
             this.text_qtd_whiskey.Name = "text_qtd_whiskey";
             this.text_qtd_whiskey.Size = new System.Drawing.Size(57, 20);
             this.text_qtd_whiskey.TabIndex = 10;
             // 
             // text_volume_whiskey
             // 
-            this.text_volume_whiskey.Location = new System.Drawing.Point(206, 45);
+            this.text_volume_whiskey.Location = new System.Drawing.Point(88, 56);
             this.text_volume_whiskey.Name = "text_volume_whiskey";
             this.text_volume_whiskey.Size = new System.Drawing.Size(336, 20);
             this.text_volume_whiskey.TabIndex = 7;
             // 
             // text_nome_whiskey
             // 
-            this.text_nome_whiskey.Location = new System.Drawing.Point(206, 19);
+            this.text_nome_whiskey.Location = new System.Drawing.Point(88, 30);
             this.text_nome_whiskey.Name = "text_nome_whiskey";
             this.text_nome_whiskey.Size = new System.Drawing.Size(336, 20);
             this.text_nome_whiskey.TabIndex = 6;
@@ -139,7 +141,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(138, 19);
+            this.label6.Location = new System.Drawing.Point(20, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 5;
@@ -148,7 +150,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(138, 136);
+            this.label7.Location = new System.Drawing.Point(20, 147);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 4;
@@ -157,7 +159,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(138, 104);
+            this.label8.Location = new System.Drawing.Point(20, 115);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 13);
             this.label8.TabIndex = 3;
@@ -166,7 +168,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(138, 73);
+            this.label9.Location = new System.Drawing.Point(20, 84);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 13);
             this.label9.TabIndex = 2;
@@ -175,7 +177,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(138, 45);
+            this.label10.Location = new System.Drawing.Point(20, 56);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(42, 13);
             this.label10.TabIndex = 1;
@@ -186,7 +188,7 @@
             this.group_cadas_whiskey.Controls.Add(this.grid_whiskeys);
             this.group_cadas_whiskey.Location = new System.Drawing.Point(29, 202);
             this.group_cadas_whiskey.Name = "group_cadas_whiskey";
-            this.group_cadas_whiskey.Size = new System.Drawing.Size(693, 280);
+            this.group_cadas_whiskey.Size = new System.Drawing.Size(917, 316);
             this.group_cadas_whiskey.TabIndex = 10;
             this.group_cadas_whiskey.TabStop = false;
             this.group_cadas_whiskey.Text = "Wiskeys";
@@ -203,7 +205,7 @@
             this.grid_whiskeys.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grid_whiskeys.Location = new System.Drawing.Point(3, 16);
             this.grid_whiskeys.Name = "grid_whiskeys";
-            this.grid_whiskeys.Size = new System.Drawing.Size(687, 261);
+            this.grid_whiskeys.Size = new System.Drawing.Size(911, 297);
             this.grid_whiskeys.TabIndex = 2;
             this.grid_whiskeys.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_whiskeys_CellContentClick);
             // 
@@ -243,7 +245,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 494);
+            this.ClientSize = new System.Drawing.Size(971, 544);
             this.Controls.Add(this.group_whiskeys);
             this.Controls.Add(this.group_cadas_whiskey);
             this.Name = "Whiskey";
@@ -277,6 +279,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewComboBoxColumn2;
-
+        private System.Windows.Forms.Timer timer1;
     }
 }

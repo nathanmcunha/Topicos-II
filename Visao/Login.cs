@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace Visao
 {
-    public partial class Pais : Form
+    public partial class Login : Form
     {
-        public Pais()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void txt_senha_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void ok_pais_Click(object sender, EventArgs e)
+        private void user_login_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visao
 {
-    public partial class Form1 : Form
+    public partial class Cadastrar_Cerveja : Form
     {
-        public Form1()
+        public Cadastrar_Cerveja()
         {
             InitializeComponent();
         }

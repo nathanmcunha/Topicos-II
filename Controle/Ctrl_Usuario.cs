@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Modelo.;
+
 
 namespace Controle
 {
-    public class Class1
+    class Ctrl_Usuario
     {
+         public bool validarUsuario(Usuario _user){
+            return true;
+        }
     }
 }
