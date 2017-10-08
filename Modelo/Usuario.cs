@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class Usuario
+    public class Usuario
     {
         private String username;
         private String password;
@@ -16,5 +16,4 @@ namespace Modelo
         public string Password { get => password; set => password = value; }
         public int Perfil { get => perfil; set => perfil = value; }
     }
-
 }
