@@ -31,6 +31,7 @@
             this.user_login = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.ok_login = new System.Windows.Forms.Button();
+            this.msg_login = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // user_login
@@ -51,7 +52,7 @@
             // 
             // ok_login
             // 
-            this.ok_login.Location = new System.Drawing.Point(129, 230);
+            this.ok_login.Location = new System.Drawing.Point(129, 227);
             this.ok_login.Name = "ok_login";
             this.ok_login.Size = new System.Drawing.Size(75, 23);
             this.ok_login.TabIndex = 2;
@@ -59,11 +60,21 @@
             this.ok_login.UseVisualStyleBackColor = true;
             this.ok_login.Click += new System.EventHandler(this.ok_login_Click);
             // 
+            // msg_login
+            // 
+            this.msg_login.AutoSize = true;
+            this.msg_login.Location = new System.Drawing.Point(126, 186);
+            this.msg_login.Name = "msg_login";
+            this.msg_login.Size = new System.Drawing.Size(0, 13);
+            this.msg_login.TabIndex = 3;
+            this.msg_login.Click += new System.EventHandler(this.msg_login_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 346);
+            this.Controls.Add(this.msg_login);
             this.Controls.Add(this.ok_login);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.user_login);
@@ -80,5 +91,6 @@
         private System.Windows.Forms.TextBox user_login;
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Button ok_login;
+        private System.Windows.Forms.Label msg_login;
     }
 }

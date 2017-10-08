@@ -50,12 +50,26 @@ namespace Visao
                     this.DialogResult = DialogResult.Yes;
                     this.Close();
                 }
+                else
+                {
+                    msg_login.Text = "Ih Deu ruim !!!!";    
+                }
             }   
             catch (Exception)
             {
 
                 throw;
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void msg_login_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
