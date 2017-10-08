@@ -136,6 +136,7 @@
             this.Controls.Add(this.group_main);
             this.Name = "Main";
             this.Text = "Controle de Estoque";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.group_main.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

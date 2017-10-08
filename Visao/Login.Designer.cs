@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.user_login = new System.Windows.Forms.TextBox();
-            this.txt_senha = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
             this.ok_login = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -41,13 +41,13 @@
             this.user_login.TabIndex = 0;
             this.user_login.TextChanged += new System.EventHandler(this.user_login_TextChanged);
             // 
-            // txt_senha
+            // txt_password
             // 
-            this.txt_senha.Location = new System.Drawing.Point(129, 154);
-            this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(232, 20);
-            this.txt_senha.TabIndex = 1;
-            this.txt_senha.TextChanged += new System.EventHandler(this.txt_senha_TextChanged);
+            this.txt_password.Location = new System.Drawing.Point(129, 154);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(232, 20);
+            this.txt_password.TabIndex = 1;
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_senha_TextChanged);
             // 
             // ok_login
             // 
@@ -57,6 +57,7 @@
             this.ok_login.TabIndex = 2;
             this.ok_login.Text = "Login";
             this.ok_login.UseVisualStyleBackColor = true;
+            this.ok_login.Click += new System.EventHandler(this.ok_login_Click);
             // 
             // Login
             // 
@@ -64,7 +65,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 346);
             this.Controls.Add(this.ok_login);
-            this.Controls.Add(this.txt_senha);
+            this.Controls.Add(this.txt_password);
             this.Controls.Add(this.user_login);
             this.Name = "Login";
             this.Text = "Login";
@@ -77,7 +78,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox user_login;
-        private System.Windows.Forms.TextBox txt_senha;
+        private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Button ok_login;
     }
 }

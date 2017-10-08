@@ -6,12 +6,29 @@ using System.Threading.Tasks;
 using Modelo;
 
 
-namespace Controle
-{
-    class Ctrl_Usuario
-    {
-         public bool validarUsuario(Usuario _user){
-            return true;
+namespace Controle{
+
+    public class Ctrl_Usuario{
+
+        public bool validarUsuario(Usuario _user){
+
+            try{
+                if (_user.Username.Equals("nathanmcunha") && _user.Password.Equals("1234"))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception ex){
+
+                throw new Exception(ex.Message);
+            }
+
+           
         }
     }
 }

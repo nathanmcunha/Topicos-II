@@ -43,17 +43,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dados\Dados.csproj">
-      <Project>{2b85497c-ce28-4299-9854-7d65429dccc1}</Project>
-      <Name>Dados</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Modelo\Modelo.csproj">
       <Project>{958f5b98-b9c3-46bc-b717-646f0b81fd0b}</Project>
       <Name>Modelo</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Visao\Visao.csproj">
-      <Project>{a3b0d9e4-7cb6-4d97-b838-158a5de69ace}</Project>
-      <Name>Visao</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

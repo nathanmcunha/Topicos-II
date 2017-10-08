@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Modelo;
 
 namespace Visao
 {
@@ -56,6 +57,36 @@ namespace Visao
         {
 
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            EfetuarLogin();
+        }
+
+        private void EfetuarLogin()
+        {
+            try
+            {
+                Login form = new Login();
+
+                if (!(form.ShowDialog() == DialogResult.Yes))
+                {
+                    this.Close();
+                }
+
+                Usuario usuario = (Usuario)form.Tag;
+
+                //GerenciarPermissao(useruario);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO: " + ex.Message);
+            }
+        }
+
+
+
+
     }
 }
 
