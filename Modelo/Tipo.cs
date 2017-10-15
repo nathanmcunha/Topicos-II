@@ -8,5 +8,8 @@ namespace Modelo
 {
     class Tipo
     {
-    }
+        private String id;
+        private String nome;
+    } 
+
 }

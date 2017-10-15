@@ -63,11 +63,17 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Main_1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Main_1.Designer.cs">
+      <DependentUpon>Main_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_2.Designer.cs">
+      <DependentUpon>Main_2.cs</DependentUpon>
     </Compile>
     <Compile Include="Pais.cs">
       <SubType>Form</SubType>
@@ -98,8 +104,11 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="Main_1.resx">
+      <DependentUpon>Main_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_2.resx">
+      <DependentUpon>Main_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pais.resx">
       <DependentUpon>Pais.cs</DependentUpon>

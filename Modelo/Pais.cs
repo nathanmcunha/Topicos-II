@@ -8,5 +8,7 @@ namespace Modelo
 {
     class Pais
     {
+        private String id;
+        private String nome;
     }
 }

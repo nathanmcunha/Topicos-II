@@ -8,5 +8,11 @@ namespace Modelo
 {
     class Whiskey
     {
+        private int id;
+        private String nome;
+        private String pais;
+        private String tipo;
+        private Double qtd;
     }
+    
 }

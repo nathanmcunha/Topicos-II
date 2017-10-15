@@ -31,5 +31,56 @@ namespace Visao
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radio_gerencial_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radio_comum_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cervejaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastrar_Cerveja form = new Cadastrar_Cerveja();
+            form.ShowDialog();
+
+        }
+
+        private void whiskeyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Whiskey form = new Whiskey();
+            form.ShowDialog();
+        }
+
+        private void paísToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pais form = new Pais();
+            form.ShowDialog();
+        }
+
+        private void tiposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tipo form = new Tipo();
+            form.ShowDialog();
+
+        }
     }
 }
