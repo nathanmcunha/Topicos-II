@@ -44,6 +44,7 @@
             this.user_login.Name = "user_login";
             this.user_login.Size = new System.Drawing.Size(232, 20);
             this.user_login.TabIndex = 0;
+            this.user_login.Text = "nathanmcunha";
             this.user_login.TextChanged += new System.EventHandler(this.user_login_TextChanged);
             // 
             // txt_password
@@ -51,8 +52,10 @@
             this.txt_password.Location = new System.Drawing.Point(64, 173);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
+            this.txt_password.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txt_password.Size = new System.Drawing.Size(232, 20);
             this.txt_password.TabIndex = 1;
+            this.txt_password.Text = "12345";
             this.txt_password.TextChanged += new System.EventHandler(this.txt_senha_TextChanged);
             // 
             // ok_login

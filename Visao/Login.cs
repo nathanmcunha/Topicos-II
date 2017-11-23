@@ -41,7 +41,7 @@ namespace Visao
                 Usuario usuario = new Usuario();
                 usuario.Username = user_login.Text;
                 usuario.Password = txt_password.Text;
-                usuario.Perfil = 1;
+                //usuario.Perfil = 1;
 
                 Ctrl_Usuario controle = new Ctrl_Usuario();
                 if (controle.validarUsuario(usuario))

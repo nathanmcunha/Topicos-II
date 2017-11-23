@@ -6,9 +6,23 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class Pais
+    public class Pais
+    
     {
-        private String id;
+        private int id;
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        
         private String nome;
+
+        public String Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
     }
 }

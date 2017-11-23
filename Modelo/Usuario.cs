@@ -9,11 +9,27 @@ namespace Modelo
     public class Usuario
     {
         private String username;
+
+        public String Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
         private String password;
+
+        public String Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
         private int perfil;
 
-        public string Username { get => username; set => username = value; }
-        public string Password { get => password; set => password = value; }
-        public int Perfil { get => perfil; set => perfil = value; }
+        public int Perfil
+        {
+            get { return perfil; }
+            set { perfil = value; }
+        }
+
+      
     }
 }

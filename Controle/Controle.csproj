@@ -39,10 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cerveja_Controle.cs" />
     <Compile Include="Ctrl_Usuario.cs" />
+    <Compile Include="Pais_Controle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tipo_Controle.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Dados\Dados.csproj">
+      <Project>{2b85497c-ce28-4299-9854-7d65429dccc1}</Project>
+      <Name>Dados</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Modelo\Modelo.csproj">
       <Project>{958f5b98-b9c3-46bc-b717-646f0b81fd0b}</Project>
       <Name>Modelo</Name>

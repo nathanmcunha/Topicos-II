@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +72,27 @@
     </Compile>
     <Compile Include="Cadastrar_Cerveja.Designer.cs">
       <DependentUpon>Cadastrar_Cerveja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cerveja_pais_tipo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cerveja_pais_tipo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset_Pais.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dataset_Pais.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set_tipo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>data_set_tipo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmacao.designer.cs">
+      <DependentUpon>frmConfirmacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -83,6 +120,46 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="set_pais_cerveja.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>set_pais_cerveja.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShabbaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShabbaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShabbaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShabbaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShabbaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShabbaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShabbaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShabbaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShabbaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShabbaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShabbaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShabbaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShabbaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShabbaDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Tipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastrar_Cerveja.resx">
       <DependentUpon>Cadastrar_Cerveja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmacao.resx">
+      <DependentUpon>frmConfirmacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -129,6 +209,39 @@
     <EmbeddedResource Include="Whiskey.resx">
       <DependentUpon>Whiskey.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Cerveja_pais_tipo.xsc">
+      <DependentUpon>Cerveja_pais_tipo.xsd</DependentUpon>
+    </None>
+    <None Include="Cerveja_pais_tipo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cerveja_pais_tipo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cerveja_pais_tipo.xss">
+      <DependentUpon>Cerveja_pais_tipo.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset_Pais.xsc">
+      <DependentUpon>Dataset_Pais.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset_Pais.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dataset_Pais.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset_Pais.xss">
+      <DependentUpon>Dataset_Pais.xsd</DependentUpon>
+    </None>
+    <None Include="data_set_tipo.xsc">
+      <DependentUpon>data_set_tipo.xsd</DependentUpon>
+    </None>
+    <None Include="data_set_tipo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>data_set_tipo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="data_set_tipo.xss">
+      <DependentUpon>data_set_tipo.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,6 +251,94 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="set_pais_cerveja.xsc">
+      <DependentUpon>set_pais_cerveja.xsd</DependentUpon>
+    </None>
+    <None Include="set_pais_cerveja.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>set_pais_cerveja.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="set_pais_cerveja.xss">
+      <DependentUpon>set_pais_cerveja.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet.xsc">
+      <DependentUpon>ShabbaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShabbaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShabbaDataSet.xss">
+      <DependentUpon>ShabbaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet1.xsc">
+      <DependentUpon>ShabbaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShabbaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShabbaDataSet1.xss">
+      <DependentUpon>ShabbaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet2.xsc">
+      <DependentUpon>ShabbaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShabbaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShabbaDataSet2.xss">
+      <DependentUpon>ShabbaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet3.xsc">
+      <DependentUpon>ShabbaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShabbaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShabbaDataSet3.xss">
+      <DependentUpon>ShabbaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet4.xsc">
+      <DependentUpon>ShabbaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShabbaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShabbaDataSet4.xss">
+      <DependentUpon>ShabbaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet5.xsc">
+      <DependentUpon>ShabbaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShabbaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShabbaDataSet5.xss">
+      <DependentUpon>ShabbaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet6.xsc">
+      <DependentUpon>ShabbaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ShabbaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShabbaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShabbaDataSet6.xss">
+      <DependentUpon>ShabbaDataSet6.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -152,10 +353,29 @@
       <Name>Modelo</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\1387709431584.jpg" />
     <Content Include="Resources\asaddasdasdas.png" />
+    <Content Include="Shabba.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

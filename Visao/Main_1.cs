@@ -60,39 +60,26 @@ namespace Visao
 
         private void Main_Load(object sender, EventArgs e)
         {
-            Usuario usuario;
-            usuario = EfetuarLogin();
+           
+            EfetuarLogin();
         }
 
-        private Usuario EfetuarLogin()
+        private void EfetuarLogin()
         {
-            try
+            Login form = new Login();
+
+            if (!(form.ShowDialog() == DialogResult.Yes))
             {
-                Login form = new Login();
-
-                if (!(form.ShowDialog() == DialogResult.Yes))
-                {
-                    this.Close();
-                }
-
-                Usuario usuario = (Usuario)form.Tag;
-
-                //GerenciarPermissao(useruario);
-                return usuario;
+                this.Close();
             }
-            catch (Exception ex)
+
+            Usuario user = (Usuario)form.Tag;
+
+
+            if (user.Perfil == 2)
             {
-                MessageBox.Show("ERRO: " + ex.Message);
+                gerencial.Enabled = false;
             }
-            return null;   
-        }
-        private void hide_gerencial(int perfil)
-        {
-          if(perfil == 1)
-          {
-                
-          }
-
         }
         private void groupBox1_Enter_1(object sender, EventArgs e)
         {
@@ -127,6 +114,47 @@ namespace Visao
             Tipo form = new Tipo();
             form.ShowDialog();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbtime.Text = DateTime.Now.ToString();
+        }
+
+        private void fonteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowDialog();
+            lbtime.Font = fontDialog1.Font;
+            bemvindo.Font = fontDialog1.Font;
+           
+        }
+
+        private void temaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                this.BackColor = colorDialog1.Color;
+
+            }
+
+        }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+    
     }
 }
 

@@ -57,6 +57,9 @@
             this.whiskeyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paísToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fonteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.temaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.group_whiskeys.SuspendLayout();
             this.group_cadas_whiskey.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_whiskeys)).BeginInit();
@@ -254,7 +257,9 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
-            this.cadastrarToolStripMenuItem});
+            this.cadastrarToolStripMenuItem,
+            this.fonteToolStripMenuItem,
+            this.temaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1004, 24);
@@ -272,9 +277,8 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // cadastrarToolStripMenuItem
             // 
@@ -282,7 +286,8 @@
             this.cervejaToolStripMenuItem,
             this.whiskeyToolStripMenuItem,
             this.paísToolStripMenuItem,
-            this.tiposToolStripMenuItem});
+            this.tiposToolStripMenuItem,
+            this.usuárioToolStripMenuItem});
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
@@ -290,30 +295,44 @@
             // cervejaToolStripMenuItem
             // 
             this.cervejaToolStripMenuItem.Name = "cervejaToolStripMenuItem";
-            this.cervejaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cervejaToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.cervejaToolStripMenuItem.Text = "Cerveja";
-            this.cervejaToolStripMenuItem.Click += new System.EventHandler(this.cervejaToolStripMenuItem_Click);
             // 
             // whiskeyToolStripMenuItem
             // 
             this.whiskeyToolStripMenuItem.Name = "whiskeyToolStripMenuItem";
-            this.whiskeyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.whiskeyToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.whiskeyToolStripMenuItem.Text = "Whiskey";
-            this.whiskeyToolStripMenuItem.Click += new System.EventHandler(this.whiskeyToolStripMenuItem_Click);
             // 
             // paísToolStripMenuItem
             // 
             this.paísToolStripMenuItem.Name = "paísToolStripMenuItem";
-            this.paísToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.paísToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.paísToolStripMenuItem.Text = "País";
-            this.paísToolStripMenuItem.Click += new System.EventHandler(this.paísToolStripMenuItem_Click);
             // 
             // tiposToolStripMenuItem
             // 
             this.tiposToolStripMenuItem.Name = "tiposToolStripMenuItem";
-            this.tiposToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tiposToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.tiposToolStripMenuItem.Text = "Tipos";
-            this.tiposToolStripMenuItem.Click += new System.EventHandler(this.tiposToolStripMenuItem_Click);
+            // 
+            // usuárioToolStripMenuItem
+            // 
+            this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.usuárioToolStripMenuItem.Text = "Usuário";
+            // 
+            // fonteToolStripMenuItem
+            // 
+            this.fonteToolStripMenuItem.Name = "fonteToolStripMenuItem";
+            this.fonteToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.fonteToolStripMenuItem.Text = "Fonte";
+            // 
+            // temaToolStripMenuItem
+            // 
+            this.temaToolStripMenuItem.Name = "temaToolStripMenuItem";
+            this.temaToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.temaToolStripMenuItem.Text = "Tema";
             // 
             // Whiskey
             // 
@@ -366,5 +385,8 @@
         private System.Windows.Forms.ToolStripMenuItem whiskeyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paísToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiposToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fonteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem temaToolStripMenuItem;
     }
 }

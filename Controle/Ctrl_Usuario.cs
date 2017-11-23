@@ -11,9 +11,16 @@ namespace Controle{
     public class Ctrl_Usuario{
 
         public bool validarUsuario(Usuario _user){
-
+         
+            if (_user.Username.Equals("nathanmcunha"))
+                _user.Perfil = 1;
+            else
+            {
+                _user.Perfil = 2;
+            }
+            
             try{
-                if (_user.Username.Equals("nathanmcunha") && _user.Password.Equals("1234"))
+                if (_user.Username.Equals("nathanmcunha") && _user.Password.Equals("1234") || _user.Username.Equals("joao") && _user.Password.Equals("1234"))
                 {
                     return true;
                 }

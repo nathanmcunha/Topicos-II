@@ -35,8 +35,8 @@
             this.cad_tipos_main = new System.Windows.Forms.Button();
             this.cad_usuarios_main = new System.Windows.Forms.Button();
             this.group_main = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.gerencial = new System.Windows.Forms.GroupBox();
+            this.bemvindo = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,12 +45,16 @@
             this.whiskeyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paísToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fonteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.temaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbtime = new System.Windows.Forms.Label();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.group_main.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gerencial.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,33 +123,35 @@
             this.group_main.Text = "Estoque";
             this.group_main.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // groupBox1
+            // gerencial
             // 
-            this.groupBox1.Controls.Add(this.cad_usuarios_main);
-            this.groupBox1.Location = new System.Drawing.Point(508, 131);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(411, 356);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Gerencial";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            this.gerencial.Controls.Add(this.cad_usuarios_main);
+            this.gerencial.Location = new System.Drawing.Point(508, 131);
+            this.gerencial.Name = "gerencial";
+            this.gerencial.Size = new System.Drawing.Size(411, 356);
+            this.gerencial.TabIndex = 7;
+            this.gerencial.TabStop = false;
+            this.gerencial.Text = "Gerencial";
+            this.gerencial.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
-            // label1
+            // bemvindo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 37);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Seja Bem Vindo";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.bemvindo.AutoSize = true;
+            this.bemvindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bemvindo.Location = new System.Drawing.Point(20, 39);
+            this.bemvindo.Name = "bemvindo";
+            this.bemvindo.Size = new System.Drawing.Size(260, 37);
+            this.bemvindo.TabIndex = 8;
+            this.bemvindo.Text = "Seja Bem Vindo";
+            this.bemvindo.Click += new System.EventHandler(this.label1_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
-            this.cadastrarToolStripMenuItem});
+            this.cadastrarToolStripMenuItem,
+            this.fonteToolStripMenuItem,
+            this.temaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(971, 24);
@@ -164,8 +170,9 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // cadastrarToolStripMenuItem
             // 
@@ -182,44 +189,78 @@
             // cervejaToolStripMenuItem
             // 
             this.cervejaToolStripMenuItem.Name = "cervejaToolStripMenuItem";
-            this.cervejaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cervejaToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.cervejaToolStripMenuItem.Text = "Cerveja";
             this.cervejaToolStripMenuItem.Click += new System.EventHandler(this.cervejaToolStripMenuItem_Click);
             // 
             // whiskeyToolStripMenuItem
             // 
             this.whiskeyToolStripMenuItem.Name = "whiskeyToolStripMenuItem";
-            this.whiskeyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.whiskeyToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.whiskeyToolStripMenuItem.Text = "Whiskey";
             this.whiskeyToolStripMenuItem.Click += new System.EventHandler(this.whiskeyToolStripMenuItem_Click);
             // 
             // paísToolStripMenuItem
             // 
             this.paísToolStripMenuItem.Name = "paísToolStripMenuItem";
-            this.paísToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.paísToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.paísToolStripMenuItem.Text = "País";
             this.paísToolStripMenuItem.Click += new System.EventHandler(this.paísToolStripMenuItem_Click);
             // 
             // tiposToolStripMenuItem
             // 
             this.tiposToolStripMenuItem.Name = "tiposToolStripMenuItem";
-            this.tiposToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tiposToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.tiposToolStripMenuItem.Text = "Tipos";
             this.tiposToolStripMenuItem.Click += new System.EventHandler(this.tiposToolStripMenuItem_Click);
             // 
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.usuárioToolStripMenuItem.Text = "Usuário";
+            // 
+            // fonteToolStripMenuItem
+            // 
+            this.fonteToolStripMenuItem.Name = "fonteToolStripMenuItem";
+            this.fonteToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.fonteToolStripMenuItem.Text = "Fonte";
+            this.fonteToolStripMenuItem.Click += new System.EventHandler(this.fonteToolStripMenuItem_Click);
+            // 
+            // temaToolStripMenuItem
+            // 
+            this.temaToolStripMenuItem.Name = "temaToolStripMenuItem";
+            this.temaToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.temaToolStripMenuItem.Text = "Tema";
+            this.temaToolStripMenuItem.Click += new System.EventHandler(this.temaToolStripMenuItem_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbtime
+            // 
+            this.lbtime.AutoSize = true;
+            this.lbtime.Location = new System.Drawing.Point(505, 89);
+            this.lbtime.Name = "lbtime";
+            this.lbtime.Size = new System.Drawing.Size(49, 13);
+            this.lbtime.TabIndex = 10;
+            this.lbtime.Text = "00:00:00";
+            this.lbtime.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // fontDialog1
+            // 
+            this.fontDialog1.Apply += new System.EventHandler(this.fontDialog1_Apply);
             // 
             // Main_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 544);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lbtime);
+            this.Controls.Add(this.bemvindo);
+            this.Controls.Add(this.gerencial);
             this.Controls.Add(this.group_main);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -227,7 +268,7 @@
             this.Text = "Controle de Estoque";
             this.Load += new System.EventHandler(this.Main_Load);
             this.group_main.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.gerencial.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -243,8 +284,8 @@
         private System.Windows.Forms.Button cad_tipos_main;
         private System.Windows.Forms.Button cad_usuarios_main;
         private System.Windows.Forms.GroupBox group_main;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox gerencial;
+        private System.Windows.Forms.Label bemvindo;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
@@ -254,8 +295,12 @@
         private System.Windows.Forms.ToolStripMenuItem paísToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiposToolStripMenuItem;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.ToolStripMenuItem usuárioToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbtime;
+        private System.Windows.Forms.ToolStripMenuItem fonteToolStripMenuItem;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.ToolStripMenuItem temaToolStripMenuItem;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
